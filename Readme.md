@@ -93,9 +93,9 @@ To ensure the get and put api's to be thread safe, the get and put methods are m
  
  ## Space Complexity
 Considering N as the maximum size of the LRUCache object, K as the maximum possible length of the key and V as the maximum possible length of the value: 
- - Space complexity for Doubly Linked list = O(N * (K + V))
- - Space complexity for HashMap = O(N * (K + V))
- - Thus, overall space complexity of LRUCache = O(N * (K + V))
+ - Space complexity for Doubly Linked list = O(N*(K+V))
+ - Space complexity for HashMap = O(N*(K+1)) = O(N*K)
+ - Thus, overall space complexity of LRUCache = O(N*(K+V))
  
  ## Testing
  - Used TestNG framework to test the api's in multithreaded pool and also for unit testing.
