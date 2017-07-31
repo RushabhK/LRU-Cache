@@ -1,7 +1,15 @@
 # Disk backed LRU Cache
-A disk backed implementation of LRU cache with the following api's:
+
+## Overview
+This project is a java implementation of LRU cache with the following features:
+ - Allows get and put requests on the LRU cache
+ - Allows the cache to dump into a file on disk
+ - Allows to prime the cache with its last state from the dumped file. 
+
+The LRU cache provides the following api's:
  - V get(K key)
  - void put(K key, V value)
+
 
 ## Steps to execute
 #### 1. Clone project
